@@ -508,4 +508,11 @@ config RANDOM_TRUST_BOOTLOADER
 	  believe its RNG facilities may be faulty. This may also be configured
 	  at boot time with "random.trust_bootloader=on/off".
 
+config CUSTOM_HELLO  
+    tristate "Custom Hello World Driver"  
+    help  
+      A simple character device driver that logs hello messages.  
+      Say Y here to build it into the kernel, M to build as a module,  
+      or N to exclude it. 
+
 endmenu

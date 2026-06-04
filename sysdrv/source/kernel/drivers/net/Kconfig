@@ -593,4 +593,11 @@ config NET_FAILOVER
 	  a VM with direct attached VF by failing over to the paravirtual
 	  datapath when the VF is unplugged.
 
+# SPDX-License-Identifier: GPL-2.0
+config RTL8188FU
+    tristate "Realtek 8188F USB WiFi"
+    depends on USB
+    help
+      Help message of RTL8818FU
+
 endif # NETDEVICES
